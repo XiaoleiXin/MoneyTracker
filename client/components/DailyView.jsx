@@ -1,19 +1,11 @@
 import React from 'react';
 import DailyTable from './DailyTable.jsx';
 import DailyChart from './DailyChart.jsx';
+import DailyFetch from './DailyFetch.jsx';
 
-class DailyView extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: props.items,
-    };
-    this.chartCalculator = this.chartCalculator.bind(this);
-  }
-
-  chartCalculator() {
+const DailyView = ({ items, fetchDailyItems, showHomePage, showDailyView }) => {
+  const chartCalculator = () => {
     const ratio = {};
-    const { items } = this.state;
     const percentage = [];
     let total = 0;
     items.forEach((item) => {
@@ -29,17 +21,15 @@ class DailyView extends React.Component {
       percentage.push({ value: ratio[key] / total, name: key });
     });
     return percentage;
-  }
+  };
 
-  render() {
-    const { items } = this.state;
-    return (
-      <div>
-        <DailyChart data={this.chartCalculator()} />
-        <DailyTable data={items} />
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <DailyChart data={chartCalculator()} />
+      <DailyFetch fetchDailyItems={fetchDailyItems} showHomePage={showHomePage} showDailyView={showDailyView} />
+      <DailyTable data={items} />
+    </div>
+  );
+};
 
 export default DailyView;

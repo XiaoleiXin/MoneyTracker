@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { Modal } from 'react-bootstrap';
 
 class HomePage extends React.Component {
@@ -10,7 +11,7 @@ class HomePage extends React.Component {
       amount: '',
       category: 'Category',
       show: false,
-      date: ` ${myDate.getFullYear()}-${myDate.getMonth() + 1}-${myDate.getDate()}`,
+      date: `${myDate.getFullYear()}-${myDate.getMonth() + 1}-${myDate.getDate()}`,
     };
     this.handleDesChange = this.handleDesChange.bind(this);
     this.handleDateChange = this.handleDateChange.bind(this);
@@ -18,6 +19,7 @@ class HomePage extends React.Component {
     this.handleCategoryChange = this.handleCategoryChange.bind(this);
     this.handleShow = this.handleShow.bind(this);
     this.handleClose = this.handleClose.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleDesChange(event) {
@@ -44,9 +46,17 @@ class HomePage extends React.Component {
     this.setState({ show: true });
   }
 
+  handleSubmit() {
+    const { date, category, description} = this.state;
+    const { clearInput } = this.props;
+    let { amount } = this.state;
+    amount = Number(amount);
+    const data = { date, category, description, amount };
+    axios.post('/item', data).then(() => window.location.reload());
+  }
+
   render() {
     const { category, description, amount, date } = this.state;
-    const { showDailyView } = this.props;
     return (
       <div>
         <img src="chars.png" id="chars" alt="" />
@@ -86,8 +96,7 @@ class HomePage extends React.Component {
             <p>$ {amount}</p>
           </Modal.Body>
           <Modal.Footer>
-          <button id="summaryButton" type="button" className="btn btn-success">Add One More</button>
-          <button id="summaryButton" type="button" className="btn btn-danger" onClick={showDailyView}>Overview</button>
+          <button id="summaryButton" type="button" className="btn btn-success" onClick={this.handleSubmit}>Add it!</button>
           </Modal.Footer>
         </Modal>
       </div>

@@ -16,6 +16,7 @@ class App extends React.Component {
 
     this.showHomePage = this.showHomePage.bind(this);
     this.showDailyView = this.showDailyView.bind(this);
+    this.fetchDailyItems = this.fetchDailyItems.bind(this);
   }
 
   componentDidMount() {
@@ -50,8 +51,8 @@ class App extends React.Component {
     return (
       <div>
         <NavBar showHomePage={this.showHomePage} showDailyView={this.showDailyView} />
-        {this.state.homePage ? <HomePage showDailyView={this.showDailyView} /> : null }
-        {this.state.DailyView ? <DailyView items={items} /> : null}
+        {this.state.homePage ? <HomePage clearInput={this.clearInput} /> : null }
+        {this.state.DailyView ? <DailyView items={items} fetchDailyItems={this.fetchDailyItems} showHomePage={this.showHomePage} showDailyView={this.showDailyView} /> : null}
       </div>
     );
   }

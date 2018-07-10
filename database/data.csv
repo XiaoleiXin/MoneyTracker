@@ -23,7 +23,6 @@ date,category,description,amount
 2018-7-7,Traffic,Train,8.00
 2018-7-7,Food,coffee,6.50
 2018-7-7,Food,subway,7.50
-2018-7-7,Life,Cellphone,675.50
 2018-7-7,Life,Safeway,20.50
 2018-7-7,Entertainment,Movie,13.50
 2018-7-7,Entertainment,Bar,13.50
@@ -34,7 +33,6 @@ date,category,description,amount
 2018-7-8,Traffic,Train,8.00
 2018-7-8,Food,coffee,6.50
 2018-7-8,Food,subway,7.50
-2018-7-8,Life,Cellphone,675.50
 2018-7-8,Life,Safeway,20.50
 2018-7-8,Entertainment,Movie,13.50
 2018-7-8,Entertainment,Bar,13.50
@@ -49,7 +47,6 @@ date,category,description,amount
 2018-7-9,Food,coffee,6.50
 2018-7-9,Food,subway,7.50
 2018-7-9,Life,Luckys,20.50
-2018-7-9,Life,Cellphone,675.50
 2018-7-9,Life,Safeway,20.50
 2018-7-9,Entertainment,Movie,13.50
 2018-7-9,Entertainment,Bar,13.50

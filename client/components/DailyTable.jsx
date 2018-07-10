@@ -17,7 +17,7 @@ class DailyTable extends React.Component {
       total += item[3];
     });
     return total;
-  };
+  }
 
   ChooseCategory(key) {
     const { data } = this.props;
@@ -28,7 +28,7 @@ class DailyTable extends React.Component {
       }
     });
     this.setState({ data: result });
-  };
+  }
 
   render() {
     const { data } = this.state;
@@ -77,7 +77,7 @@ class DailyTable extends React.Component {
         </tbody>
       </table>
     );
-  };
-};
+  }
+}
 
 export default DailyTable;

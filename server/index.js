@@ -21,6 +21,11 @@ app.get('/daily/:date', (req, res) => {
   }).catch((err) => { throw err; });
 });
 
+app.post('/item', (req, res) => {
+  const data = req.body;
+  db.saveItem(data).then(data => res.send('success')).catch((err) => { throw err; });
+});
+
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });

@@ -116,18 +116,30 @@ th {
   margin: -0.5% 0% 0% 3.5%;
   outline: 0;
 }
+#go {
+  width: 8%;
+  border-radius: 8px;
+  font-size: 23px;
+  box-shadow: 2px 3px 3px #888888;
+  margin: -0.5% 0% 0% 1.5%;
+  outline: 0;
+}
 #chars {
   margin: 7% 0 6% 8%;
   width: 50%;
 }
 #chart {
-  margin-top: 40px;
+  margin: 100px 50px 0 40px;
   width: 500px;
-  height: 650px;
+  height: 600px;
   float: left;
   position: fixed;
 }
 #tableHeader {
   font-size: 22px;
   width: 170px;
+  outline: 0;
+}
+#dailyFetch {
+  margin: 20px 0 0 50px;
 }

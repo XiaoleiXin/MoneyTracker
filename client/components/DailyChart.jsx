@@ -6,9 +6,6 @@ import 'echarts/lib/component/title';
 class DailyChart extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-
-    };
     this.initChart = this.initChart.bind(this);
   }
 
@@ -36,7 +33,7 @@ class DailyChart extends React.Component {
             normal: {
               formatter: '{d}% \n{b}',
               textStyle: {
-                fontSize: 23,
+                fontSize: 18,
               },
             },
           },
