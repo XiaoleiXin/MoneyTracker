@@ -1,0 +1,133 @@
+body {
+  padding: 60px;
+}
+h4 {
+  color: rgb(73, 90, 110);
+  font-size: 18px;
+}
+p {
+  color: #22b622;
+  font-size: 29px;
+}
+table {
+  margin-top: 40px;
+  width: 700px;
+  height: 300px;
+  font-size: 20px;
+  float: right;
+}
+td {
+  text-align: center;
+  border-bottom: 1px solid #dddada;
+  height: 60px;
+}
+th {
+  text-align: center;
+  height: 60px;
+}
+.modalTitle {
+  color: rgb(73, 90, 110);
+}
+.desInput {
+  height: 50px;
+  width: 20%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: 0;
+  font-size: 20px;
+  color: rgb(73, 90, 110);
+  box-shadow: 1px 2px 3px #dbdada;
+}
+.settingInput {
+  height: 50px;
+  width: 35%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline:0;
+  font-size: 25px;
+  color: rgb(73, 90, 110);
+  box-shadow: 1px 2px 3px #dbdada;
+}
+.navbar {
+  background-color: #4aa552f3;
+}
+.navWords {
+  padding: 0px 20px 5px 0px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus {
+  background-color: #4aa552f3;
+}
+.navbar-brand {
+  padding-left: 50px; 
+}
+.photo {
+  width: 30%;
+  margin: 6.5% 35% 0% 35%;
+  border-radius: 8px;
+}
+#summaryButton {
+  width: 30%;
+  height: 45px;
+  font-size: 17px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+#confirmSet {
+  color: #22b622;
+}
+#category {
+  width: 13.5%;
+  border-radius: 8px;
+  font-size: 27px;
+  box-shadow: 2px 3px 3px #888888;
+  margin: -0.5% 3% 0 6%;
+  outline: 0;
+}
+#amount {
+  font-size: 27px;
+  color: #888888;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+#amountInput {
+  width:15%;
+}
+#dateInput {
+  width: 11%;
+  margin-right: 3%;
+}
+#categorydropdown {
+  margin-left: 6.7%;
+  font-size: 21px;
+}
+#navDropdown {
+  color: #ffffff;
+  background-color: rgb(250, 250, 228);
+  font-size: 20px;
+}
+#submit {
+  width: 13.5%;
+  border-radius: 8px;
+  font-size: 27px;
+  box-shadow: 2px 3px 3px #888888;
+  margin: -0.5% 0% 0% 3.5%;
+  outline: 0;
+}
+#chars {
+  margin: 7% 0 6% 8%;
+  width: 50%;
+}
+#chart {
+  margin-top: 40px;
+  width: 500px;
+  height: 650px;
+  float: left;
+  position: fixed;
+}
+#tableHeader {
+  font-size: 22px;
+  width: 170px;
+}
