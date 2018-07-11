@@ -16,7 +16,7 @@ class DailyFetch extends React.Component {
   }
 
   handleFetch() {
-    const { fetchDailyItems, showHomePage, showDailyView } = this.props;
+    const { fetchDailyItems, showHomePage, } = this.props;
     const { date } = this.state;
     showHomePage();
     fetchDailyItems(date);

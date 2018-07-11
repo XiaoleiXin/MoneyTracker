@@ -3,7 +3,7 @@ import DailyTable from './DailyTable.jsx';
 import DailyChart from './DailyChart.jsx';
 import DailyFetch from './DailyFetch.jsx';
 
-const DailyView = ({ items, fetchDailyItems, showHomePage, showDailyView }) => {
+const DailyView = ({ items, fetchDailyItems, showHomePage, }) => {
   const chartCalculator = () => {
     const ratio = {};
     const percentage = [];
@@ -26,7 +26,7 @@ const DailyView = ({ items, fetchDailyItems, showHomePage, showDailyView }) => {
   return (
     <div>
       <DailyChart data={chartCalculator()} />
-      <DailyFetch fetchDailyItems={fetchDailyItems} showHomePage={showHomePage} showDailyView={showDailyView} />
+      <DailyFetch fetchDailyItems={fetchDailyItems} showHomePage={showHomePage} />
       <DailyTable data={items} />
     </div>
   );
